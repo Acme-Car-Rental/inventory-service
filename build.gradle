@@ -10,11 +10,13 @@ repositories {
 }
 
 dependencies {
+    implementation 'io.quarkus:quarkus-grpc'
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
     implementation 'io.quarkus:quarkus-kotlin'
     implementation 'io.quarkus:quarkus-smallrye-graphql'
     implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
     implementation 'io.quarkus:quarkus-arc'
+    implementation 'io.github.microutils:kotlin-logging-jvm:2.0.11'
     testImplementation 'io.quarkus:quarkus-junit5'
 }
 
